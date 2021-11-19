@@ -1,0 +1,57 @@
+<title>Contact</title>
+<link rel="stylesheet" type="text/css" href="styles.css">
+<nav>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+<form name="chefs" method="POST" data-netlify="true">
+    <p>
+      <label>Name<input type="text" name="name" /></label>   
+    </p>
+    <p>
+      <label>Phone number<input type="number" name="phone" /></label>
+    </p>
+    <p>
+    <label>Age<input type="number" name="age" /></label>   
+</p>
+<p>
+  <label>Date of birth<input type="date" name="birthdate" /></label>   
+</p>
+<p>
+  <p>Gender</p>
+   <p><input type="radio" id="male" name="gender" value="male">
+    <label for="male">Male</label><br></label></p>   
+    <p><input type="radio" id="female" name="gender" value="female">
+  <label for="female">Female</label></p>
+  <p><input type="radio" id="nonbinary" name="gender" value="nonbinary">
+  <label for="nonbinary">Non-binary</label></p><br>
+</p>
+<p>Favourite Cuisine</p>
+<p><input type="checkbox" id="french" name="cuisine" value="french">
+<label for="french">French</label></p>
+<p><input type="checkbox" id="italian" name="cuisine" value="italian">
+  <label for="italian">Italian</label></p>
+  <p><input type="checkbox" id="spanish" name="cuisine" value="spanish">
+    <label for="spanish">Spanish</label></p>
+    <p><input type="checkbox" id="arabic" name="cuisine" value="arabic">
+      <label for="arabic">Arabic</label></p>
+      <p><label for="aproncolor">What is your favourite apron color:</label>
+  <input type="color" id="aproncolor" name="aproncolor" value="#000000">
+</p>
+<p><label>Tell us something about yourself</p><textarea name="bio" rows="10" cols="20"></textarea></label>
+<p>
+  <label>Upload your latest recipe<input type="file" name="recipe" /></label>   
+</p>
+<p>
+  <label>Your website<input type="url" name="chefswebsite" /></label>   
+</p>
+<p>
+  <button type="reset">Clear</button>
+</p>
+    <p>
+      <button type="submit">Verstuur</button>
+    </p>
+  </form>
