@@ -1,0 +1,249 @@
+* {
+    font-family: 'IBM Plex Mono', 'courier', sans-serif;
+    font-weight: 300;
+}
+
+/* FONTS */
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Shippori Antique', 'Helvetica', sans-serif;
+    line-height: 120%;
+}
+
+h1 {
+    font-size: 12rem;
+    margin: 2rem;
+}
+
+h2 {
+    font-size: 8rem;
+    margin: 2rem;
+}
+
+small {
+    margin-left: 3rem;
+    font-size: 3rem;
+}
+
+p {
+    font-size: 3rem;
+    margin: 0;
+}
+
+strong {
+    font-weight: 500;
+}
+
+/* HEADER */
+
+header {
+    padding: 5vw 0 10vw 0;
+}
+
+header#sub {
+    padding: 5vw 0;
+}
+
+.header-icon {
+    width: 10rem;
+    height: auto;
+    margin-left: 2rem;
+}
+
+.header-icon-small {
+    width: 5rem;
+    margin: 0 2rem;
+}
+
+nav {
+    display: flex;
+    border-bottom: 5px solid black;
+}
+
+nav > a {
+    font-family: 'Shippori Antique', 'Helvetica', sans-serif;
+    font-size: 3rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+    margin-bottom: 2rem;
+}
+
+nav:active {
+    background-color: #FF480D;
+}
+
+/* GRID */
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.grid-spot {
+    width: 90%;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding-bottom: 4rem;
+}
+
+.spot {
+    position: relative;
+    width: 100%;
+    height: 20rem;
+    object-fit: cover;
+}
+
+.text {
+    margin: 3rem 0;
+}
+
+.button {
+    font-family: 'Shappiro Antique', 'Helvetica', sans-serif;
+    font-size: 2.2rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: black;
+    border: 5px solid black;
+    padding: 1.5rem;
+    text-decoration: none;
+    width: 40%;
+    display: block;
+    margin: auto;
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+}
+
+.button:active {
+    background-color: #9A00FA;
+}
+
+/* FOOTER */
+
+footer {
+    padding: 5rem 2rem;
+    border-top: 5px solid black;
+}
+
+footer > ul {
+    display: flex;
+    list-style: none;
+    width: 100%;
+    justify-content: space-between;
+    padding-left: 0;
+}
+
+li > a {
+    font-family: 'Shappiro Antique', 'Helvetica', sans-serif;
+    font-size: 3rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+}
+
+/* FORM */
+
+form {
+    margin-left: 2rem;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 2rem;
+}
+
+input {
+    height: 3rem;
+    margin-left: 1rem;
+}
+
+input[type="text"], input[type="email"], input[type="url"], input[type="file"] {
+    font-size: 2.5rem;
+}
+
+input[type="radio"] {
+    width: 50px;
+    height: 50px;
+}
+
+.wrapper {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+/* MOBILE FIRST!!! */
+
+@media (min-width: 768px) {
+
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 20px;
+    }
+
+    .spot {
+        height: 20rem;
+    }
+    p {
+        font-size: 2rem;
+    }
+
+    .button {
+        font-size: 1.6rem;
+        width: 50%;
+    }
+
+    input[type="text"], input[type="email"], input[type="url"], input[type="file"] {
+        font-size: 2rem;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    header {
+        padding-top: 0;
+    }
+
+    header#sub {
+        padding-top: 0;
+    }
+
+    nav:hover {
+        background-color: #FF480D;
+    }
+
+    nav > a {
+        margin: 1rem;
+    }
+
+    p {
+        font-size: 1.8rem;
+    }
+
+    .button {
+        font-size: 1.4rem;
+        font-weight: 400;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-row-gap: 20px;
+    }
+
+    .spot {
+        position: relative;
+        width: 100%;
+    }
+
+    .button:hover {
+        background-color: #9A00FA;
+    }
+
+}
