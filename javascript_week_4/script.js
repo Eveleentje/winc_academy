@@ -1,0 +1,17 @@
+console.log("Hello Winc academy");
+    let name = 'Eveleen';
+    console.log(name);
+    let sum = 4 + 4;
+    console.log(sum);
+    let sumTwo = "4" + "4";
+    console.log(sumTwo);
+    let sumThree = 100 - 40;
+    console.log(sumThree);
+    let sumFour = 6 * 250;
+    console.log(sumFour);
+    let sumFive = 6 / 250;
+    console.log(sumFive);
+    let total = 250;
+    let modulus = total % 6;
+    let age = "thirtyseven";
+    console.log(typeof age);
