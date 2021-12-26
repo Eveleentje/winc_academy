@@ -1,38 +1,39 @@
 // function declaration
 
 function calculationDeclaration(number1, number2) {
-    squareDeclaration1 = number1 * number1;
-    squareDeclaration2 = number2 * number2;
-    sumDeclaration = squareDeclaration1 + squareDeclaration2;
+    const squareDeclaration1 = number1 * number1;
+    const squareDeclaration2 = number2 * number2;
+    const sumDeclaration = squareDeclaration1 + squareDeclaration2;
+    const sumSquareDeclaration = sumDeclaration * sumDeclaration;
+    return sumSquareDeclaration;
+}
 
-    return sumSquareDeclaration = sumDeclaration * sumDeclaration;
-};
+const result1 = calculationDeclaration(5, 8);
+console.log(result1);
 
-calculationDeclaration(5, 8);
-console.log(sumSquareDeclaration);
 
 // function expression
 
-const calculationExpression = function (number3, number4) {
-    squareExpression1 = number3 * number3;
-    squareExpression2 = number4 * number4;
-    sumExpression = squareExpression1 + squareExpression2;
-
-    return sumSquareExpression = sumExpression * sumExpression;
+const calculationExpression = function(number3, number4) {
+    const squareExpression1 = number3 * number3;
+    const squareExpression2 = number4 * number4;
+    const sumExpression = squareExpression1 + squareExpression2;
+    const sumSquareExpression = sumExpression * sumExpression;
+    return sumSquareExpression;
 };
 
-calculationExpression(5, 8);
-console.log(sumSquareExpression);
+const result2 = calculationExpression(5, 8);
+console.log(result2);
 
 // arrow function
 
 const calculationArrow = (number5, number6) => {
-    squareArrow1 = number5 * number5;
-    squareArrow2 = number6 * number6;
-    sumArrow = squareArrow1 + squareArrow2;
-
-    return sumSquareArrow = sumArrow * sumArrow;
+    const squareArrow1 = number5 * number5;
+    const squareArrow2 = number6 * number6;
+    const sumArrow = squareArrow1 + squareArrow2;
+    const sumSquareArrow = sumArrow * sumArrow;
+    return sumSquareArrow;
 };
 
-calculationArrow(5, 8);
-console.log(sumSquareArrow);
+const result3 = calculationArrow(5, 8);
+console.log(result3);
