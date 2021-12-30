@@ -7,42 +7,43 @@ if (age >= 18) {
 return false;
 };
 
-const greeting = function() {
-    if (checkAge(38) === true) {
+const greeting = function(age) {
+    if (checkAge(age) === true) {
         return ("Hello there");
     }
     return ("Hey kiddo");
 };
 
-const result = greeting();
-console.log(result);
+console.log(greeting(17));
+console.log(greeting(38));
 
 // VAT excercise 1
 
-const calculateVat = function(price) {
-return price * 0.21;
+const calculateVat = function(price, vatPercentage) {
+return price * (vatPercentage / 100);
 };
 
-const result1 = calculateVat(1000);
-console.log(result1);
+console.log(calculateVat(1000, 21));
 
-const totalPrice = function(price) {
-return price + calculateVat(1000);
+const totalPrice = function(price, vatPercentage) {
+const vat = calculateVat(price, vatPercentage);
+return price + vat;
 };
 
-const result2 = totalPrice(1000);
-console.log(result2);
+console.log(totalPrice(1000, 21));
 
 // VAT excercise 2
 
-const vatFactor = function(vatPercentage) {
-    return vatPercentage / 100 + 1;
+const calculateBasePrice = function(totalAmount, vatPercentage) {
+    const basePrice = totalAmount / ((vatPercentage + 100) / 100);
+    return basePrice;
 };
 
-const basePriceVat = function(totalAmount) {
-return totalAmount / vatFactor(21);
+const basePriceVat = function(totalAmount, vatPercentage) {
+const basePrice = calculateBasePrice(totalAmount, vatPercentage);
+const vat = totalAmount - basePrice;
+return [basePrice, vat];
 };
 
-const result3 = basePriceVat(1210);
-console.log(result3);
+console.log(basePriceVat(1210, 21));
 
