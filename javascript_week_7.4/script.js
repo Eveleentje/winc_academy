@@ -1,16 +1,15 @@
 // colors while loop
 
-const colors = ["yellow", "blue", "red", "orange"];
 var i = 0;
-while (i <= colors.length-1) {
+const colors = ["yellow", "blue", "red", "orange"];
+while (i < colors.length) {
+console.log(colors[i]);
 i++
-const whileLoopColors = colors[i];
-console.log(whileLoopColors);
 }
 
 // colors for loop
 
-for (i = 0; i <= colors.length-1; i++) {
+for (i = 0; i < colors.length; i++) {
   const colors = ["yellow", "blue", "red", "orange"];
   const listOfColors = colors[i];
   console.log(listOfColors);
